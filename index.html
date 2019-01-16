@@ -14,31 +14,28 @@
     <meta charset="utf-8" />
     <title></title>
     <script type="text/javascript">
-        //window.onload = function () {
-        //    var $ = c => document.getElementById(c);
-        //    var head = $("iframe").contentWindow.document.getElementsByTagName("head");
-        //    alert(head);
-        //};
-
-        var $ = c => document.getElementById(c);
+        iframe = document.createElement('iframe');
+        iframe.style.display = 'none';
         var state = 0;
+    
+        iframe.onload = function() {
+          if(state === 1) {
+              var data = JSON.parse(iframe.contentWindow.name);
+              console.log(data);
+              iframe.contentWindow.document.write('');
+              iframe.contentWindow.close();
+            document.body.removeChild(iframe);
+          } else if(state === 0) {
+              state = 1;
+              iframe.contentWindow.location = 'https://baidu.com';
+          }
+        };
 
-        function Iframe() {
-            var iframe = $("iframe");
-            if (state === 1) {
-                var data = JSON.parse(iframe.contentWindow.name);
-                console.log(data);
-                iframe.contentWindow.document.write('');
-                iframe.contentWindow.close();
-                document.body.removeChild(iframe);
-            } else if (state === 0) {
-                state = 1;
-                iframe.contentWindow.location = 'https://baidu.com';
-            }
-        }
+        iframe.src = 'https://li-xiaoyao.github.io/index.html';
+        document.body.appendChild(iframe);
     </script>
 </head>
 <body>
-    <iframe src="https://li-xiaoyao.github.io/index.html" id="iframe" width="100%" frameborder="0" scrolling="no" onload="this.height = window.innerHeight;Iframe();"></iframe>
+<!--    <iframe src="" id="iframe" width="100%" frameborder="0" scrolling="no" onload="this.height = window.innerHeight;Iframe();"></iframe>-->
 </body>
 </html>
