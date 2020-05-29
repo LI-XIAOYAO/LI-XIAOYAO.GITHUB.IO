@@ -3,11 +3,13 @@
     <title>Hello Word</title>
     <link href="/Resource/css/main.css" rel="stylesheet" />
 	<script>
-		var gbElement = document.getElementsByClassName("guide-button")[0];
-		if(gbElement){
-			gbElement.onclick = function(){
-				if(confim("have a look?")){
-					localtion.href = 'http://mb.lxyns.top';
+	window.onload = function() {
+			var gbElement = document.getElementsByClassName("guide-button")[0];
+			if(gbElement){
+				gbElement.onclick = function(){
+					if(confim("have a look?")){
+						localtion.href = 'http://mb.lxyns.top';
+					}
 				}
 			}
 		}
