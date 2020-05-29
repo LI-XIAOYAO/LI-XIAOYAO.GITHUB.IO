@@ -12,8 +12,7 @@
     top: 0;
     z-index: 9999999;
     background-color: white;
-    background-image: url('http://pic.netbian.com/uploads/allimg/180505/110807-15254896876e27.jpg');
-    /*background-image: url('http://www.005.tv/uploads/allimg/160417/13-16041G60S2159.jpg');*/
+    background-image: url('/Resource/img/9-2559.jpg');
     background-size: cover;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0,0.6);
     overflow: auto;
