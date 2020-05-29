@@ -1,48 +1,23 @@
-<!--<html>
+﻿<html>
 <head>
-    <title>Hello World</title>
+    <title>Hello Word</title>
+    <link href="~/Resource/css/main.css" rel="stylesheet" />
 </head>
 <body>
-    <h3>Welcome to first github repository for lixiaoyao.</h3>
-</body>
-</html>-->
-
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
-    <script type="text/javascript"> 
-        function crossDomain(url, fn) {
-            iframe = document.createElement('iframe');
-            iframe.style.display = 'none';
-            var state = 0;
-
-            iframe.onload = function () {
-                if (state === 1) {
-                    fn(iframe.contentWindow.name);
-                    iframe.contentWindow.document.write('');
-                    iframe.contentWindow.close();
-                    document.body.removeChild(iframe);
-                } else if (state === 0) {
-                    state = 1;
-                    iframe.contentWindow.location = 'https://mp.weixin.qq.com/';
-                }
-            };
-
-            iframe.src = url;
-            document.body.appendChild(iframe);
-        }
-
-        var url = 'https://li-xiaoyao.github.io/index.html';
-        crossDomain(url, function (data) {
-            var data = JSON.parse(iframe.contentWindow.name);
-            console.log(data);
-        });
-    </script>
-    <!--    <iframe src="" id="iframe" width="100%" frameborder="0" scrolling="no" onload="this.height = window.innerHeight;Iframe();"></iframe>-->
+    <div>
+       <div class="other-container">
+            <span class="top-nav">TOP</span>
+            <div class="guide-container" guide-version="1.0">
+                <span class="guide-descrption">
+                    <i>Alpha</i>
+                    <i class="guide-version">1.0</i>
+                    <i class="guide-descrption-small">20.05.06</i>
+                </span>
+                <span class="guide-descrption-content">Welcome to here !</span>
+                <span class="guide-button">GO</span>
+                <span class="guide-full-screen"></span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
