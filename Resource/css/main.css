@@ -219,7 +219,12 @@
 	opacity: 1;
 }
 
-.resume::before {
+.resume::before, .resume::after {
+	position: absolute;
+}
+
+.resume:hover::before {
 	content: 'RESUME';
+	animation: nav-before-show 0.5s both;
 	
 }
