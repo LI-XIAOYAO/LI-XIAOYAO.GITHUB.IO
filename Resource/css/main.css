@@ -205,11 +205,12 @@
     box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 30%);
 	text-decoration: none;
 	z-index: 9999999;
+	opacity: .5;
 }
 
 .resume:hover {
 	right: 10px;
-	color: darkgray;
+	color: black;
 	user-select: none;
 	box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 40%);
 }
