@@ -208,7 +208,7 @@
 }
 
 .resume:hover {
-	right: 30px;
+	right: 10px;
 	color: darkgray;
 	user-select: none;
 	box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 40%);
