@@ -204,6 +204,7 @@
     color: darkgray;
     box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 30%);
 	text-decoration: none;
+	z-index: 9999999;
 }
 
 .resume ::hover {
