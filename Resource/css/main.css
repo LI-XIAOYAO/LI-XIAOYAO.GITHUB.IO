@@ -242,3 +242,15 @@
     border-radius: 3px;
     font-size: 14px;
 }
+
+.resume:hover::after {
+	content: 'RESUME';
+    left: 0;
+    top: 14px;
+    color: rgba(0, 0, 0, 0.8);
+    user-select: none;
+    padding: 3px 5px;
+    box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 40%);
+    border-radius: 3px;
+    font-size: 14px;
+}
