@@ -198,7 +198,7 @@
 	padding: 5px 10px;
     background-color: white;
     position: absolute;
-    right: 30px;
+    right: -40px;
     top: 35%;
     border-radius: 3px;
     color: darkgray;
@@ -207,7 +207,8 @@
 	z-index: 9999999;
 }
 
-.resume ::hover {
+.resume:hover {
+	right: 30px;
 	color: darkgray;
 	user-select: none;
 	box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 40%);
