@@ -222,7 +222,7 @@
 }
 
 @keyframes resume-hover {
-    from {
+    to {
         right: 10px;
     }
 }
