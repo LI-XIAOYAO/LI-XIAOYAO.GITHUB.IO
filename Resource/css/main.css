@@ -245,11 +245,11 @@
 
 .resume:hover::after {
 	content: 'RESUME';
-    left: 40px;
+    left: -9px;
     top: 14px;
     color: white;
     user-select: none;
-    padding: 3px 5px;
+    padding: 3px 10px;
     border-radius: 3px;
     font-size: 14px;
     opacity: 0;
