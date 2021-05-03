@@ -214,10 +214,17 @@
 }
 
 .resume:hover {
-	right: 10px;
+	/* right: 10px; */
+	animation: resume-hover .6s both;
 	user-select: none;
 	box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 40%);
 	opacity: 1;
+}
+
+@keyframes resume-hover {
+    from {
+        right: 10px;
+    }
 }
 
 .resume::before, .resume::after {
