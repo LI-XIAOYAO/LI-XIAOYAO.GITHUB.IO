@@ -200,7 +200,7 @@
 	height: 50px;
     background-color: white;
     position: fixed;
-    right: -40px;
+    right: -25px;
     top: 35%;
     border-radius: 50%;
     color: darkgray;
@@ -214,7 +214,12 @@
 
 .resume:hover {
 	right: 10px;
-	color: black;
 	user-select: none;
 	box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 40%);
+	opacity: 1;
+}
+
+.resume::before {
+	content: 'RESUME';
+	
 }
