@@ -1,24 +1,26 @@
 ﻿<html>
+
 <head>
     <title>Hello Word</title>
     <link href="/Resource/css/main.css" rel="stylesheet" />
-	<script>
-	window.onload = function() {
-			var gbElement = document.getElementsByClassName("guide-button")[0];
-			if(gbElement){
-				gbElement.onclick = function(){
-					if(confirm("Go to 'i.xiaoyaonie.com'")){
-						location.href = 'http://i.xiaoyaonie.com';
-					}
-				}
-			}
-		}
-		
-	</script>
+    <script>
+        window.onload = function () {
+            var gbElement = document.getElementsByClassName("guide-button")[0];
+            if (gbElement) {
+                gbElement.onclick = function () {
+                    if (confirm("Go to 'i.xiaoyaonie.com'")) {
+                        location.href = 'http://i.xiaoyaonie.com';
+                    }
+                }
+            }
+        }
+
+    </script>
 </head>
+
 <body>
     <div>
-       <div class="other-container">
+        <div class="other-container">
             <div class="guide-container" guide-version="1.0">
                 <span class="guide-descrption">
                     <i>Alpha</i>
@@ -30,7 +32,8 @@
                 <span class="guide-full-screen"></span>
             </div>
         </div>
-		<a class="resume" href="/Resume"></a>
+        <a class="resume" href="/Resume"></a>
     </div>
 </body>
+
 </html>
